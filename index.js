@@ -15,6 +15,7 @@ const circle = document.getElementById("progress-ring");
 const svg = document.getElementById("progress-svg");
 const showPlayer = document.querySelector(".show-music-player");
 const shuffleBox = document.getElementById("shuffle-box");
+const hideShowPlayer = document.getElementById("hide-show-player");
 
 const totalLength = circle.getTotalLength();
 
@@ -24,11 +25,13 @@ circle.style.strokeDashoffset = totalLength;
 console.log(totalLength);
 
 
+
 let currentIndex = null;
 let isLooping = false;
 let isShuffle = false;
 let isSeeking = false;
 
+hideShowPlayer.hidden = true;
 musicPlayerBox.hidden = true;
 playlistBox.hidden = false;
 shuffleBox.hidden = true;
@@ -38,6 +41,7 @@ showPlaylist.addEventListener("click", () => {
     musicPlayerBox.hidden = true;
     playlistBox.hidden = false;
     shuffleBox.hidden = false;
+    hideShowPlayer.hidden = false;
 });
 
 
