@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">🎶 "Play It. Feel It. Love It."</h1>
+    <div id="songs">
+        <h2 id="playlist-heading">My Playlist</h2>
+        <div id="song-playlist">
+
+            <!-- <h2 id="playlist-heading">My Playlist</h2> -->
+
+            <div id="song1" class="song" data-file="musics/DilBachha.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Dil_Tho_Bachha_Hai</div>
+                <div class="random">5:15</div>
+            </div>
+            <div id="song2" class="song" data-file="musics/Baato_Ko_Teri.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Baato_Ko_Teri</div>
+                <div class="random">4:07</div>
+            </div>
+            <div id="song3" class="song" data-file="musics/jaguar.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">jaquar</div>
+                <div class="random">2:44</div>
+            </div>
+            <div id="song4" class="song" data-file="musics/MatAazma.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Mat_Aazma_Re</div>
+                <div class="random">5:01</div>
+            </div>
+            <div id="song5" class="song" data-file="musics/NigahonMai.mpeg">  
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Nigahon_Mai</div>
+                <div class="random">5:42</div>
+            </div>
+            <div id="song6" class="song" data-file="musics/oneDirection.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">One_Direction</div>
+                <div class="random">4:01</div>
+            </div>
+            <div id="song7" class="song" data-file="musics/halka_halka_surror.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Halka_Halka_Surror</div>
+                <div class="random">7:12</div>
+            </div>
+            <div id="song8" class="song" data-file="musics/Black_ride.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Black_ride</div>
+                <div class="random">3:45</div>
+            </div>
+            <div id="song9" class="song" data-file="musics/Dope_shope.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Dope_shope</div>
+                <div class="random">3:11</div>
+            </div>
+            <div id="song10" class="song" data-file="musics/Cream_pose.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Cream_pose</div>
+                <div class="random">3:26</div>
+            </div>
+            <div id="song11" class="song" data-file="musics/Shikayat.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Shikayat</div>
+                <div class="random">3:30</div>
+            </div>
+            <div id="song11" class="song" data-file="musics/Tumse_judd_gaya.mpeg"> 
+                <div class="music-logo">🎵</div>
+                <div class="music-name">Tumse_judd_gaya</div>
+                <div class="random">0:12</div>
+            </div>
+        </div>
+        <div id="shuffle-box">
+                <h2 id="music-change-button" class="show-music-player">Show Player</h2>
+        </div>
+    </div>
+
+            <div id="music-player">
+                <div id="music-box">
+                    <h2 id="title"></h2>
+                    <h3 id="duration"></h3>
+                    <div id="circular-bar"> 
+                        <svg id="progress-svg" width="400" height="400" viewBox="0 0 400 400"> 
+                            <circle id="progress-ring" r="198" cx="200" cy="200" fill="none" stroke="lawngreen" stroke-width="5">
+                            </circle>
+                        </svg> 
+                    </div>
+                    <div id="buttons">
+                        <div id="shuffle-btn">🔀</div>
+                        <div id="previous">⏮️</div>
+                        <div id="play">⏸️</div>
+                        <div id="next">⏭️</div>
+                        <div id="loop">🔁</div>
+                    </div>
+                    <div id="shuffle">
+                        <h2 id="song-name">Show Playlist</h2>
+                    </div>
+                </div>
+            </div>
+
+    <audio id="audio-player"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- ⏸️ 🔂 🔛 -->
+
+
